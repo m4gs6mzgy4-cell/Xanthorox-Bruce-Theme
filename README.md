@@ -13,55 +13,30 @@
 - Magenta LED breathe effect
 - Optimized for 320×170 T-Embed display
 
-### Installation
+### Installation (Easiest)
 1. Flash latest **Bruce** (select **T-Embed CC1101**) → https://bruce.computer/flasher
-2. **Download the full theme package** (contains boot.gif + all icons):
-   - From the Grok conversation **Artifacts** panel:  
-     `Xanthorox_Bruce_Theme_T-Embed_CC1101_v1.2.zip` (1.9 MB)
-3. Unzip it
-4. Copy **all files** inside `Xanthorox_T-Embed/` (theme.json + boot.gif + boot.png + all icons) to the root of a FAT32 SD card
-5. On the device: **Config → UI Theme → SD Card → select `theme.json`**
-6. Reboot and enjoy the full animation
+2. Download the complete package from the Grok conversation Artifacts:  
+   **`Xanthorox_Bruce_Theme_FINAL.zip`**
+3. Unzip it → you will get a folder named `Xanthorox`
+4. Copy the entire `Xanthorox` folder to the root of a FAT32 microSD card
+5. Insert SD into T-Embed → **Config → UI Theme → SD Card** → open `Xanthorox` → select `theme.json`
+6. Reboot. The full 10s boot plays automatically.
 
-### Current files in this repo
-- `README.md`
-- `theme.json` (ready to use)
+### Files in the package
+- `theme.json`
+- `boot.gif` (10s animated)
+- `boot.png` (static)
+- 15 icons: wifi, ble, rf, rfid, ir, fm, files, gps, nrf, interpreter, clock, lora, others, connect, config
 
-**Note about binaries**: The large files (`boot.gif` ~1.2 MB and the 15 PNG icons) are provided in the conversation artifacts zip because of current upload limits on binary content through the GitHub connector.  
-After downloading the zip, just drag-and-drop the missing files into this repository on GitHub.com to complete it.
+### Colors (RGB565)
+- Primary: `07ff` (Cyan neon)
+- Secondary: `f81f` (Magenta)
+- Background: `0000` (Black)
+- LED: `#c000c0` Magenta breathe
 
-### theme.json
-```json
-{
-  "wifi": "wifi.png",
-  "ble": "ble.png",
-  "rf": "rf.png",
-  "rfid": "rfid.png",
-  "fm": "fm.png",
-  "ir": "ir.png",
-  "files": "files.png",
-  "gps": "gps.png",
-  "nrf": "nrf.png",
-  "interpreter": "interpreter.png",
-  "clock": "clock.png",
-  "lora": "lora.png",
-  "others": "others.png",
-  "connect": "connect.png",
-  "config": "config.png",
-  "priColor": "07ff",
-  "secColor": "f81f",
-  "bgColor": "0000",
-  "border": 1,
-  "label": 0,
-  "boot_img": "boot.gif",
-  "ledBright": 80,
-  "ledColor": "c000c0",
-  "ledEffect": 1,
-  "ledEffectSpeed": 4,
-  "ledEffectDirection": 1
-}
-```
+### Note
+Binary assets (boot.gif + icons) cannot currently be uploaded through the GitHub connector. Download the FINAL zip from the conversation artifacts and either use it directly or drag the files into this repo via the GitHub website.
 
 Stay ethereal. 🦈
 
-**Live repo**: https://github.com/m4gs6mzgy4-cell/Xanthorox-Bruce-Theme
+**Repo**: https://github.com/m4gs6mzgy4-cell/Xanthorox-Bruce-Theme
