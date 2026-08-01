@@ -1,6 +1,6 @@
 # Xanthorox Theme for Bruce Firmware
 
-**Dark cyberpunk-horror neon theme** for LilyGO T-Embed CC1101 (and standard T-Embed) running [Bruce Firmware](https://bruce.computer).
+**Dark cyberpunk-horror neon theme** for LilyGO T-Embed CC1101 running [Bruce Firmware](https://bruce.computer).
 
 ### Features
 - **10-second cinematic boot animation**:
@@ -14,29 +14,54 @@
 - Optimized for 320×170 T-Embed display
 
 ### Installation
-1. Flash latest **Bruce** (select T-Embed CC1101) via the [official flasher](https://bruce.computer/flasher)
-2. Download this repository (Code → Download ZIP) or clone it
-3. Copy all the theme files (theme.json + icons + boot.gif / boot.png) to the root of a FAT32 SD card (or put them in a folder)
-4. On the device: **Config → UI Theme → SD Card → select `theme.json`**
-5. Reboot to enjoy the full animated boot
+1. Flash latest **Bruce** (select **T-Embed CC1101**) → https://bruce.computer/flasher
+2. **Download the full theme package** (contains boot.gif + all icons):
+   - From the Grok conversation **Artifacts** panel:  
+     `Xanthorox_Bruce_Theme_T-Embed_CC1101_v1.2.zip` (1.9 MB)
+3. Unzip it
+4. Copy **all files** inside `Xanthorox_T-Embed/` (theme.json + boot.gif + boot.png + all icons) to the root of a FAT32 SD card
+5. On the device: **Config → UI Theme → SD Card → select `theme.json`**
+6. Reboot and enjoy the full animation
 
-### Files
-| File | Description |
-|------|-------------|
-| `theme.json` | Theme configuration |
-| `boot.gif` | 10s animated boot sequence (~1.2 MB) |
-| `boot.png` | Static boot fallback |
-| `*.png` | Menu icons (wifi, ble, rf, rfid, etc.) |
+### Current files in this repo
+- `README.md`
+- `theme.json` (ready to use)
 
-### Colors (RGB565)
-- Primary: `07ff` (Cyan)
-- Secondary: `f81f` (Magenta)
-- Background: `0000` (Black)
-- LED: `#c000c0` (Magenta breathe)
+**Note about binaries**: The large files (`boot.gif` ~1.2 MB and the 15 PNG icons) are provided in the conversation artifacts zip because of current upload limits on binary content through the GitHub connector.  
+After downloading the zip, just drag-and-drop the missing files into this repository on GitHub.com to complete it.
 
-### Credits
-Created with Grok Imagine for the Bruce community.  
+### theme.json
+```json
+{
+  "wifi": "wifi.png",
+  "ble": "ble.png",
+  "rf": "rf.png",
+  "rfid": "rfid.png",
+  "fm": "fm.png",
+  "ir": "ir.png",
+  "files": "files.png",
+  "gps": "gps.png",
+  "nrf": "nrf.png",
+  "interpreter": "interpreter.png",
+  "clock": "clock.png",
+  "lora": "lora.png",
+  "others": "others.png",
+  "connect": "connect.png",
+  "config": "config.png",
+  "priColor": "07ff",
+  "secColor": "f81f",
+  "bgColor": "0000",
+  "border": 1,
+  "label": 0,
+  "boot_img": "boot.gif",
+  "ledBright": 80,
+  "ledColor": "c000c0",
+  "ledEffect": 1,
+  "ledEffectSpeed": 4,
+  "ledEffectDirection": 1
+}
+```
+
 Stay ethereal. 🦈
 
----
-**Repo**: https://github.com/m4gs6mzgy4-cell/Xanthorox-Bruce-Theme
+**Live repo**: https://github.com/m4gs6mzgy4-cell/Xanthorox-Bruce-Theme
